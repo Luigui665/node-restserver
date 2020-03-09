@@ -22,7 +22,7 @@ app.use(require("./routes/index"));
 mongoose.connect(
     process.env.urlDB, {
         useNewUrlParser: true,
-        //useUnifiedTopology: true
+        useUnifiedTopology: true,
         useCreateIndex: true
     },
     (err, res) => {
